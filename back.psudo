@@ -1,0 +1,8 @@
+<?php
+
+include(connect.php);
+
+print(on_button());
+print(off_button());
+
+//auto off at midnight
