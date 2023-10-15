@@ -1,0 +1,8 @@
+<?php
+
+include(sql-connect.php);
+
+if status == "on":
+  print ":)";
+else
+  print ":(";
