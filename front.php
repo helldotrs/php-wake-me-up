@@ -15,12 +15,15 @@ if ($result->num_rows > 0) {
         $dayFromDB = $row["day"];
         if (is_numeric($dayFromDB) && $dayFromDB >= 1 && $dayFromDB <= 31) {
             if ($dayFromDB == $today) {
-                echo ":)";
+                echo "<!-- :) -->";
+                include "fluff/awake.htm";
             } else {
-                echo ":(";
+                echo "<!-- :( -->";
+                include "fluff/asleep.htm";
             }
         } else {
-            echo "error:0182";
+            echo "<b>error:0182</b>";
+            include "fluff/asleep.htm";
         }
     }
 } else {
